@@ -1,7 +1,6 @@
 ---
 title: Chemistry ⟷ Information ⟷ Discovery
 ---
-# Chemistry <span id="arrow">⟷</span> Information <span id="arrow">⟷</span> Discovery
 
 <img src="images/logo.png" class="logo"/>
 
