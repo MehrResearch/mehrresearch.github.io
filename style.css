@@ -1,0 +1,42 @@
+body {
+    margin: 1em auto;
+    width: min(80%, 820px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    text-align: center
+}
+
+h2 {
+    font-size: medium;
+    margin-bottom: 0px;
+}
+
+ul {
+    padding-left: 0.5em
+}
+
+li {
+    padding-bottom: 0.5em;
+    list-style: none
+}
+
+img.logo {
+    width: 10em;
+    display: block;
+    margin: 0 auto
+}
+
+span#arrow {
+    vertical-align: 0.1em;
+}
+
+#under_title {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2;
+}
