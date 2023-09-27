@@ -16,7 +16,7 @@ jobs:
       - name: Convert Markdown to HTML
         run: |
           for file in $(find . -name "*.md"); do
-              pandoc -s "$file" -c styles.css -o "${file%.md}.html"
+              pandoc -s "$file" -c style.css -o "${file%.md}.html"
           done
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
