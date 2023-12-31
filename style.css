@@ -28,13 +28,13 @@ ul {
 
 li {
     padding-bottom: 0.5em;
-    list-style: none
+    list-style: square inside;
 }
 
 img.logo {
-    width: 10em;
+    width: 40%;
     display: block;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 span#arrow {
