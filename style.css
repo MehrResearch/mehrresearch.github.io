@@ -6,6 +6,11 @@ body {
     border-bottom: 1px solid black;
 }
 
+p, ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 h1 {
     text-align: center;
     font-weight: 400;
@@ -28,13 +33,17 @@ ul {
 
 li {
     padding-bottom: 0.5em;
-    list-style: square inside;
+    list-style: square outside;
+    margin-left: 1em;
 }
 
 img.logo {
     width: 40%;
     display: block;
     margin: 0 auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    max-height: 3.5em;
 }
 
 span#arrow {
@@ -45,4 +54,8 @@ span#arrow {
     text-align: center;
     font-weight: bold;
     line-height: 1.2;
+}
+
+a {
+    color: #1e579b;
 }

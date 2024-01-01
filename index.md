@@ -1,17 +1,17 @@
----
-title: Chemistry – Information – Discovery
----
+# Chemistry – Information – Discovery
 
-<img src="images/logo.svg" class="logo"/>
+<p style='display:flex'>
+<span style='text-wrap:nowrap'>Mehr Research</span> <img src="images/logo.svg" class="logo"/><span style="text-wrap:nowrap">University of Glasgow</span>
+</p>
 
 ## Research
 The overarching theme of our research is to re-imagine the experimental approaches in mainstream chemical synthesis and discovery drawing on advances in instrumentation, computational modelling, and artificial intelligence.
 
 ## Opportunities
-For anyone with an interest in chemistry, computing science, physics, or engineering, I would be very happy to discuss potential post-doc/PhD/MSc supervision, summer placements, or other opportunities.
+For anyone with an interest in chemistry, computing science, physics, or engineering, please feel free to get in touch about opportunities including post-doc/PhD/MSc supervision, summer placements, and internships.
 
 ## Resources
-* Microsoft Word [manuscript template]
+* [Microsoft Word template for chemistry manuscripts][template]: Opinionated starting point for writing chemistry manuscripts
 
 ## Current members
 * Nicholas Morris (joint Computing Science–Chemistry PhD student, co-supervised with [Blair Archibald])
@@ -27,4 +27,4 @@ For anyone with an interest in chemistry, computing science, physics, or enginee
 * Chaoyi Zhu (PGT student, summer 2023)
 
 [Blair Archibald]: http://blairarchibald.co.uk
-[manuscript template]: https://gla-my.sharepoint.com/:w:/g/personal/hessam_mehr_glasgow_ac_uk/ETwk8aDhZ8xKlCG-VtlLNagBebhCnld8OOFiLKx6meM_-Q?e=5l8Uy6
+[template]: https://gla-my.sharepoint.com/:w:/g/personal/hessam_mehr_glasgow_ac_uk/ETwk8aDhZ8xKlCG-VtlLNagBebhCnld8OOFiLKx6meM_-Q?e=5l8Uy6
