@@ -1,3 +1,8 @@
+---
+header-includes:
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+---
+
 # Chemistry – Information – Discovery
 
 <p style='display:flex'>
