@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>programming &#8211; Mehr Research</title>
+	<atom:link href="https://mehr-research.science/tag/programming/feed/" rel="self" type="application/rss+xml" />
+	<link>https://mehr-research.science</link>
+	<description>Chemistry — Information — Discovery</description>
+	<lastBuildDate>Thu, 21 Mar 2024 16:48:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
+
+<image>
+	<url>https://mehr-research.science/wp-content/uploads/2024/01/Group-logo-150x150.png</url>
+	<title>programming &#8211; Mehr Research</title>
+	<link>https://mehr-research.science</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Crafting next-generation reaction containers out of mists of tiny particles</title>
+		<link>https://mehr-research.science/2024/crafting-next-generation-reaction-containers-out-of-mists-of-tiny-particles/</link>
+					<comments>https://mehr-research.science/2024/crafting-next-generation-reaction-containers-out-of-mists-of-tiny-particles/#comments</comments>
+		
+		<dc:creator><![CDATA[Luokun Zhang]]></dc:creator>
+		<pubDate>Thu, 21 Mar 2024 16:48:43 +0000</pubDate>
+				<category><![CDATA[New voices]]></category>
+		<category><![CDATA[alginate]]></category>
+		<category><![CDATA[automation]]></category>
+		<category><![CDATA[chemistry]]></category>
+		<category><![CDATA[containers]]></category>
+		<category><![CDATA[materials chemistry]]></category>
+		<category><![CDATA[micropython]]></category>
+		<category><![CDATA[microscopy]]></category>
+		<category><![CDATA[programming]]></category>
+		<category><![CDATA[ultrasonic]]></category>
+		<guid isPermaLink="false">https://mehr-research.science/?p=280</guid>
+
+					<description><![CDATA[Hi everyone! My name is Zhang Luokun, a master student of Advanced Functional Materials from the University of Glasgow. I am currently working as an intern in the Mehr research group. Two years ago, I came to Glasgow after finishing my undergraduate studies in China. For my program, I learnt the synthesis technology and characterisation [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Hi everyone! My name is Zhang Luokun, a master student of Advanced Functional Materials from the University of Glasgow. I am currently working as an intern in the Mehr research group.</p>
+
+
+
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="768" height="1024" src="https://mehr-research.science/wp-content/uploads/2024/03/微信图片_20240313155349-1-768x1024.jpg" alt="" class="wp-image-314" srcset="https://mehr-research.science/wp-content/uploads/2024/03/微信图片_20240313155349-1-768x1025.jpg 768w, https://mehr-research.science/wp-content/uploads/2024/03/微信图片_20240313155349-1-225x300.jpg 225w, https://mehr-research.science/wp-content/uploads/2024/03/微信图片_20240313155349-1.jpg 1015w" sizes="(max-width: 768px) 100vw, 768px" /><figcaption class="wp-element-caption">This is me in Glasgow.</figcaption></figure>
+
+
+
+<p>Two years ago, I came to Glasgow after finishing my undergraduate studies in China. For my program, I learnt the synthesis technology and characterisation (such as atomic force microscope, transmission electron microscope, etc.) of some popular advanced materials (such as quantum dots, perovskite batteries, etc.), which will be the basis of my research work in the future.</p>
+
+
+
+<p>When Hessam pitched the idea of using microdroplets as reactors, I was attracted by this crazy idea, and so embarked on a project to create micron-sized soft materials out of seaweed. This blog post is to share with you why these materials are so interesting and how we hope to use them to make the next generation of chemical containers.</p>
+
+
+
+<h3 class="wp-block-heading">What really <em>is</em> a chemical container?</h3>
+
+
+
+<p>When it comes to chemical reactions, many people think of two solutions mixed in a beaker or test tube, changing from one colour to another. The function of beakers or test tubes is to isolate the reaction from the environment. As a traditional reaction container, they have the advantages of low price and easy operation, but the disadvantages of only carrying out one kind of reaction at the same time are also obvious. If I need to do four chemical reactions and try five reactant ratios for each reaction, assuming I need 5 mL of reactant for each reaction, then I need 20 beakers or test tubes and 100 mL of reactant solution. This soon starts to become impractical when we need to examine a larger number of reactions and conditions.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="719" src="https://mehr-research.science/wp-content/uploads/2024/03/Fig-2v1-1024x719.jpg" alt="" class="wp-image-301" srcset="https://mehr-research.science/wp-content/uploads/2024/03/Fig-2v1-1024x719.jpg 1024w, https://mehr-research.science/wp-content/uploads/2024/03/Fig-2v1-300x211.jpg 300w, https://mehr-research.science/wp-content/uploads/2024/03/Fig-2v1-768x539.jpg 768w, https://mehr-research.science/wp-content/uploads/2024/03/Fig-2v1.jpg 1217w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Separtte one container into several parts could make different reactions do at the same time.</figcaption></figure>
+
+
+
+<p>Perhaps you can say that, under the premise of constant total volume, if the interior of a container is divided into several smaller partitions, the above problem can be solved. This is true and indeed it&#8217;s the design idea behind more modern reaction vessels like 96 well plates.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" width="650" height="650" src="https://mehr-research.science/wp-content/uploads/2024/03/image.jpeg" alt="" class="wp-image-380" style="width:336px;height:auto" srcset="https://mehr-research.science/wp-content/uploads/2024/03/image.jpeg 650w, https://mehr-research.science/wp-content/uploads/2024/03/image-300x300.jpeg 300w, https://mehr-research.science/wp-content/uploads/2024/03/image-150x150.jpeg 150w" sizes="(max-width: 650px) 100vw, 650px" /><figcaption class="wp-element-caption">96 well plates like the one above have become ubiquitous in the biosciences (<a href="https://www.fishersci.ca/shop/products/nunc-96-well-polystyrene-round-bottom-microwell-plates/12565212">image source</a>).</figcaption></figure>
+
+
+
+<p>You can even go above 96 wells and well plates with 384, 1536, and even 12,000 wells are available commercially. However, this idea soon runs into limitations. Not only would tinier wells become prohibitively expensive to manufacture, manually using them would be cumbersome and time consuming, even with the help of automation, such as robotic pipetting machines.</p>
+
+
+
+<p>This is where our idea of using aerosols comes in: if we are able to turn individual aerosol particles (each just a few microns in size) into chemical containers, it would provide a fast and easy way to make millions of tiny containers that we would never be able to create manually.</p>
+
+
+
+<h3 class="wp-block-heading">Why calcium alginate?</h3>
+
+
+
+<p>Let&#8217;s look more closely at how exactly we are planning to create our next-generation reaction vessels. In order to build a container around an aerosol particle, the easiest way is to form it within the medium where the reaction will take place, called <em>in situ</em> in chemistry. Can this strategy address the challenge of building microscopic isolated chemical environments?</p>
+
+
+
+<details class="wp-block-details has-accent-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-width:1px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><summary>What does in situ mean?</summary>
+<p>The phrase <em>in situ </em>come from Latin, literally meaning &#8220;in its original position or place&#8221;. It can mean &#8220;locally&#8221;, &#8220;on site&#8221;, &#8220;on the premises&#8221;, or &#8220;in place&#8221; to describe where an event takes place and is used in many different contexts.</p>
+
+
+
+<p>In chemistry,<em> in situ</em> refers to the formation of an intermediate or catalyst and its direct usage in a subsequent reaction or process without isolating or purifying it.</p>
+
+
+
+<p>In related fields like metallurgy, <em>in situ</em> formation of intermediates can be useful as well. For example, if we want to generate TiC particles <em>in situ</em> in an iron alloy, we do not need to directly add TiC particles, but add titanium powder and carbon-containing toner and react them to produce titanium carbide.</p>
+</details>
+
+
+
+<p>This puts forward new requirements for the chemistry used to form our reaction vessels: the reaction generating the container needs to be robust and reliable (not easily affected by the reaction conditions such as temperature, pH, etc.), and it should be possible for small molecules to enter and leave the container.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large is-resized"><img loading="lazy" decoding="async" width="1024" height="353" src="https://mehr-research.science/wp-content/uploads/2024/03/image-7-1024x353.png" alt="" class="wp-image-396" style="width:388px;height:auto" srcset="https://mehr-research.science/wp-content/uploads/2024/03/image-7-1024x353.png 1024w, https://mehr-research.science/wp-content/uploads/2024/03/image-7-300x103.png 300w, https://mehr-research.science/wp-content/uploads/2024/03/image-7-768x264.png 768w, https://mehr-research.science/wp-content/uploads/2024/03/image-7-1536x529.png 1536w, https://mehr-research.science/wp-content/uploads/2024/03/image-7.png 1920w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">The structure of alginic acid, from which alginate salts such as sodium alginate are derived (<a href="https://en.wikipedia.org/wiki/Alginic_acid">image source</a>).</figcaption></figure>
+
+
+
+<p>In my project, we focused on alginate-based materials to meet this challenge. Alginate is a natural polysaccharide derived from brown seaweed. Due to its unique properties such as biocompatibility, biodegradability, and the ability to form gels in the presence of divalent cations like calcium, alginate is widely used in various industries, including food, pharmaceuticals, and biomedical applications.</p>
+
+
+
+<p>Calcium alginate happens to meet all of the above conditions. It is produced by cross-linking alginate using calcium ions, which works under a wide range of conditions. As a bonus, the soft structure generated this way can be rapidly dismantled in the presence of compounds like ethylenediaminetetraacetic acid (EDTA), so that we can easily release the contents of our container.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large is-resized"><img loading="lazy" decoding="async" width="1024" height="834" src="https://mehr-research.science/wp-content/uploads/2024/03/image-5-1024x834.png" alt="" class="wp-image-385" style="width:414px;height:auto" srcset="https://mehr-research.science/wp-content/uploads/2024/03/image-5-1024x834.png 1024w, https://mehr-research.science/wp-content/uploads/2024/03/image-5-300x244.png 300w, https://mehr-research.science/wp-content/uploads/2024/03/image-5-768x625.png 768w, https://mehr-research.science/wp-content/uploads/2024/03/image-5.png 1280w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Ethylenediaminetetraacetic acid (EDTA) is a compound known for its ability to bind metal ions like Ca<sup>2+</sup>.</figcaption></figure>
+
+
+
+<details class="wp-block-details has-accent-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-width:1px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><summary>What does cross-linking mean?</summary>
+<p>In chemistry and biology a cross-link is a bond or a short sequence of bonds that links one polymer chain to another. Cross-linking leads to gel formation, which improves the mechanical strength and stability conpared to uncross-linking solution. The cross-linking is widely applied in drug delivery, tissue engineering, food encapsulation, etc.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="730" src="https://mehr-research.science/wp-content/uploads/2024/03/Fig-3v2-1024x730.jpg" alt="" class="wp-image-347" srcset="https://mehr-research.science/wp-content/uploads/2024/03/Fig-3v2-1024x730.jpg 1024w, https://mehr-research.science/wp-content/uploads/2024/03/Fig-3v2-300x214.jpg 300w, https://mehr-research.science/wp-content/uploads/2024/03/Fig-3v2-768x548.jpg 768w, https://mehr-research.science/wp-content/uploads/2024/03/Fig-3v2.jpg 1064w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+</details>
+
+
+
+<h3 class="wp-block-heading">How did we do it?</h3>
+
+
+
+<p>Usually, calcium alginate is produced by reacting sodium alginate solution with calcium chloride solution. In order to obtain micron-scale calcium alginate, though, we needed to create tiny sodium alginate droplets (smaller than the diameter of a human hair). Obviously, these droplets wouldn&#8217;t be practical to make manually, so we turned to a somewhat unusual method instead: using an ultrasonic atomiser.</p>
+
+
+
+<details class="wp-block-details has-accent-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-width:1px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><summary>What is an ultrasonic atomiser?</summary>
+<p>Ultrasonic atomisers are devices that using ultrasonic vibrations to create a fine mist or spray of liquid. They are commonly used in various applications such as humidifiers, medical nebulisers, spray-coating systems, and even in certain types of fuel injectors used in cars.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="832" height="832" src="https://mehr-research.science/wp-content/uploads/2024/03/image-6.png" alt="" class="wp-image-388" style="width:393px;height:auto" srcset="https://mehr-research.science/wp-content/uploads/2024/03/image-6.png 832w, https://mehr-research.science/wp-content/uploads/2024/03/image-6-300x300.png 300w, https://mehr-research.science/wp-content/uploads/2024/03/image-6-150x150.png 150w, https://mehr-research.science/wp-content/uploads/2024/03/image-6-768x768.png 768w" sizes="auto, (max-width: 832px) 100vw, 832px" /><figcaption class="wp-element-caption">Ultrasonic humidifiers can make a fine mist of water droplets resembling steam without having to heat water up to its boiling point, so the resulting mist is cool to the touch (<a href="https://www.homeboxstores.com/ae/en/Decor-and-Furnishings/Home-Fragrance/Revitalizers-and-Humidifiers/HOMEBOX-Tranquil-Humidifier---3-3-L/p/162633326">image source</a>).</figcaption></figure>
+</details>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://www.electric-fireplace.co.uk/img/1746/2000x2000/opti-myst.jpg" alt=""/><figcaption class="wp-element-caption">There&#8217;s no real fire burning in this decorative fireplace! What you see is a fine mist of water droplets with a clever orange backlight that makes it look like the flames of a wood fire. Photo credit: <a href="https://www.electric-fireplace.co.uk/">electric-fireplace.co.uk</a>.</figcaption></figure>
+
+
+
+<p>Here is how our atomiser setup works. First, we have a very cool electronic component called a piezoelectric actuator. What does the actuator do? It moves in response to an electric potential (aka voltage). If we change the voltage very rapidly (say a few hundred thousand times a second), the actuator starts to vibrate fast enough that any liquid that comes into contact with it is smashed into microscopic droplets. Second, we need a way to bring the solution in the bottle to the actuator. For this we use a wick made of cotton. One end of the wick is in contact with the liquid in the bottle and the other end touches the piezoelectric element at the mouth of the bottle. The solution is diffused through the cotton wick to the top. To summarise, when sodium alginate solution is poured into the vial the cotton wick draws it up and brings it into contact with the actuator.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://mehr-research.science/wp-content/uploads/2024/03/IMG_20240310_204154-1024x768.jpg" alt="" class="wp-image-305" srcset="https://mehr-research.science/wp-content/uploads/2024/03/IMG_20240310_204154-1024x768.jpg 1024w, https://mehr-research.science/wp-content/uploads/2024/03/IMG_20240310_204154-300x225.jpg 300w, https://mehr-research.science/wp-content/uploads/2024/03/IMG_20240310_204154-768x576.jpg 768w, https://mehr-research.science/wp-content/uploads/2024/03/IMG_20240310_204154-1536x1151.jpg 1536w, https://mehr-research.science/wp-content/uploads/2024/03/IMG_20240310_204154-2048x1535.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">The reaction space is filled with microdroplets.</figcaption></figure>
+
+
+
+<p>Next, we energise the piezoelectric element. We can control exactly when this happens using a computer program that can be customised according to our experiment. When activated, the actuator undergoes periodic deformation, producing sound wave. But these sound waves are very high in frequency, so we cannot hear them; that&#8217;s why they are called <em>ultrasonic pulses</em>. The overall result is that our sodium alginate solution is broken up into microscopic droplets and ejected upward.</p>
+
+
+
+<p>In our experiments, we tried two different methods of preparing calcium alginate. One was to make sodium alginate and calcium chloride solution form droplet, which reacted after collision in the air and collected by glass sheet; The other is to allow a solution of sodium alginate to form droplets, which are collected in a petri dish or beaker containing a solution of calcium chloride. We found that the second method works better when there is no intervention (such as using an electromagnetic field to control the movement of the droplets). This is probably because the likelihood of alginate and calcium droplets colliding in the air is not very large in the first method.</p>
+
+
+
+<p>We didn&#8217;t only use sodium alginate and calcium solutions in our experiments. The table below shows some of the other combinations that we tried (there were many many more!). Some of these combinations gave us very interesting results that you can see in the microscopy pictures at the bottom.</p>
+
+
+
+<figure class="wp-block-table is-style-stripes"><table><thead><tr><th class="has-text-align-center" data-align="center">Experiment</th><th class="has-text-align-center" data-align="center">Solution 1</th><th class="has-text-align-center" data-align="center">Solution 2</th></tr></thead><tbody><tr><td class="has-text-align-center" data-align="center">a</td><td class="has-text-align-center" data-align="center">Sodium alginate</td><td class="has-text-align-center" data-align="center">Calcium chloride</td></tr><tr><td class="has-text-align-center" data-align="center">b</td><td class="has-text-align-center" data-align="center">Sodium alginate + Sodium ferrocyanide</td><td class="has-text-align-center" data-align="center">Calcium chloride + ferric chloride</td></tr><tr><td class="has-text-align-center" data-align="center">c</td><td class="has-text-align-center" data-align="center">Sodium alginate + Sodium ferrocyanide + Iron oxide particle</td><td class="has-text-align-center" data-align="center">Calcium chloride + ferric chloride</td></tr><tr><td class="has-text-align-center" data-align="center">d</td><td class="has-text-align-center" data-align="center">Adding EDTA (Ethylene Diamine Tetraacetic Acid) after experiment b</td><td class="has-text-align-center" data-align="center"></td></tr></tbody></table><figcaption class="wp-element-caption">A list showing some of the solutions that we used for our lab experiments.</figcaption></figure>
+
+
+
+<p>Then, we tried to introduce the reaction of iron ions into the formation of calcium alginate reaction vessel to verify that the calcium alginate generated <em>in situ</em> can serve as the reaction vessel. When sodium ferrocyanate solution is mixed with ferric chloride solution, the mixed solution will change from light yellow to blue. We added sodium ferrocyanate solution to sodium alginate solution so that the resulting droplets were a mixture of sodium alginate and sodium ferrocyanate, and a mixture of calcium chloride and ferric chloride was added to the petri dish. At the end of the reaction, the blue droplets can be clearly observed under the light microscope at 5.6 times magnification. This means that the reaction can be carried out in calcium alginate reaction vessels.</p>
+
+
+
+<p>The next question that came to our mind was whether we could put anything, such as solid particles, inside our microscopic containers. To see if this was possible, we added iron oxide powder to the above solution of sodium ferrocyanide and sodium alginate. After the reaction, the solid particles can be clearly observed under the optical microscope (see picture <strong>c</strong> below).</p>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" decoding="async" width="1024" height="768" src="https://mehr-research.science/wp-content/uploads/2024/03/Fig-1v1-1024x768.jpg" alt="" class="wp-image-300" style="width:620px;height:auto" srcset="https://mehr-research.science/wp-content/uploads/2024/03/Fig-1v1-1024x768.jpg 1024w, https://mehr-research.science/wp-content/uploads/2024/03/Fig-1v1-300x225.jpg 300w, https://mehr-research.science/wp-content/uploads/2024/03/Fig-1v1-768x576.jpg 768w, https://mehr-research.science/wp-content/uploads/2024/03/Fig-1v1-1536x1152.jpg 1536w, https://mehr-research.science/wp-content/uploads/2024/03/Fig-1v1-2048x1536.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">These images are some of results of our experiments recorded using a microscope attached to a camera. In part (a), you can see the almost colourless calcium alginate in the dotted box. Part (b) shows the result after adding iron reaction, the microdroplets are blue. In part (c), you can see the black dots on the surface of microdroplets, which are the iron oxide particles we added in the alginate solution. Part (d) shows the result after adding EDTA in the calcium alginate droplets.</figcaption></figure>
+
+
+
+<p>Finally, we added EDTA (Ethylene Diamine Tetraacetic Acid) to the petri dish after the reaction was completed, and after a few seconds, all the blue products previously appeared disappeared, which means that the cross-linked structure of calcium alginate can be destroyed in a short time.</p>
+
+
+
+<h3 class="wp-block-heading">Looking to the future</h3>
+
+
+
+<p>Many thanks to Dr. Hessam Mehr for his unwavering support and patient guidance, which enabled me to complete this project. Making tiny chemical containers is a very exciting area of research and we think that we have only begun to scratch the surface in the short period working on this project. We need to try more types of reactions to understand what other unique materials can be made using our aerosol-powered and computer-controlled techniques.</p>
+
+
+
+<p>We had to tackle many challenges in this project. For example, when forming sodium alginate droplets, we found that different components of the solution require adjusting parameters such as voltage and frequency, and finding the optimal values seems to be tricky, which is also the challenge of this technology.</p>
+
+
+
+<p>These days, I spent the weekends visiting some small towns around Glasgow, and enjoying the beautiful scenery, which always gives me the energy to continue my experiment with the complete enthusiasm when back in the lab.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="576" src="https://mehr-research.science/wp-content/uploads/2024/03/微信图片_20240315145443-1024x576.jpg" alt="" class="wp-image-349" srcset="https://mehr-research.science/wp-content/uploads/2024/03/微信图片_20240315145443-1024x576.jpg 1024w, https://mehr-research.science/wp-content/uploads/2024/03/微信图片_20240315145443-300x169.jpg 300w, https://mehr-research.science/wp-content/uploads/2024/03/微信图片_20240315145443-768x432.jpg 768w, https://mehr-research.science/wp-content/uploads/2024/03/微信图片_20240315145443-1536x864.jpg 1536w, https://mehr-research.science/wp-content/uploads/2024/03/微信图片_20240315145443-2048x1152.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">This is me in the Oban.</figcaption></figure>
+
+
+
+<p>At the same time, this project has allowed me to face everything that happens in scientific experiments with peace of mind. Not all experiments are a success but you can always learn something from each one, and there are always new challenges when you least expect them. I regard this period as a gentle prelude to my future academic life. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://mehr-research.science/2024/crafting-next-generation-reaction-containers-out-of-mists-of-tiny-particles/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
