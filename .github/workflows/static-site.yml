@@ -1,0 +1,46 @@
+name: WordPress Static Site Generator
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight
+  workflow_dispatch:      # Allows manual trigger
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install wget
+        run: |
+          sudo apt-get update
+          sudo apt-get install wget
+
+      - name: Create public directory
+        run: mkdir -p public
+
+      - name: Fetch WordPress site
+        run: |
+          cd public
+          wget \
+            --mirror \
+            --page-requisites \
+            --adjust-extension \
+            --convert-links \
+            --no-parent \
+            https://mehr-research.science
+          
+          # Create .nojekyll file to prevent GitHub Pages from using Jekyll
+          touch .nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
+          clean: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cleanup
+        run: rm -rf public

@@ -1,1 +1,0 @@
-pandoc -c style.css -s -o index.html index.md --metadata title='Mehr Research' --variable title=""
