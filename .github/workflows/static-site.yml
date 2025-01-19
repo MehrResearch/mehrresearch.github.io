@@ -1,8 +1,8 @@
 name: WordPress Static Site Generator
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight
+  # schedule:
+  #   - cron: '0 0 * * *'  # Runs daily at midnight
   workflow_dispatch:      # Allows manual trigger
 
 jobs:
@@ -24,6 +24,7 @@ jobs:
         run: |
           cd public
           wget \
+            -P .
             --mirror \
             --page-requisites \
             --adjust-extension \
