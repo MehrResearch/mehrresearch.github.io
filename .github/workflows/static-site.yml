@@ -24,7 +24,6 @@ jobs:
         run: |
           cd public
           wget \
-            -P . \
             --mirror \
             --page-requisites \
             --adjust-extension \
@@ -32,6 +31,7 @@ jobs:
             --no-parent \
             https://mehr-research.science
           
+          mv mehr-research.science/* .
           # Create .nojekyll file to prevent GitHub Pages from using Jekyll
           touch .nojekyll
 
